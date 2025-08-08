@@ -1,0 +1,12 @@
+---
+git:
+  branch: main
+
+# no build/ pre_deploy section
+
+deploy:
+  commands:
+    - rsync -a .next/   /home2/costin/public_html/frontend/.next/
+    - rsync -a public/  /home2/costin/public_html/frontend/public/
+    - rsync -a node_modules/ /home2/you/public_html/frontend/node_modules/
+    - rsync -a out/ /home2/you/public_html/frontend/
