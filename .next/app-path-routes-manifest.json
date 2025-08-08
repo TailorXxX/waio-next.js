@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/(pages)/about/page": "/about",
+  "/page": "/",
+  "/(pages)/contact/page": "/contact",
+  "/posts/[slug]/page": "/posts/[slug]"
+}
