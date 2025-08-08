@@ -1,12 +1,8 @@
 
 import Image from 'next/image'
-import util from 'util'
-import { getContactPage } from '../../../../lib/contactSettings'
-
-export default async function ContactHero() {
 
 
-  const pageBy = await getContactPage() ;
+export default async function ContactHero({ data: cs}) {
 
   const cs          = pageBy.contactSettings
   const title = cs.title
@@ -29,13 +25,7 @@ export default async function ContactHero() {
       height: heroNode.mediaDetails.height,
     }
   }
-  {list.map(({ item }, i) => (
-          
-          console.log(
-            '🔍 repeaterList =',
-            util.inspect(i, { showHidden: false, depth: null, colors: false })
-          )
-        ))}
+
 
   return (
     <>
