@@ -4,7 +4,6 @@ import Image from 'next/image'
 
 export default async function ContactHero({ data: cs}) {
 
-  const cs          = pageBy.contactSettings
   const title = cs.title
   const content = pageBy.info
   const bgNode   = cs.background.node
